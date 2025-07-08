@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "extends": "@repo/tsconfig/base.json",
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "target": "ESNext",
     "module": "Preserve",
     "moduleDetection": "force",

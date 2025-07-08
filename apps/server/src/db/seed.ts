@@ -1,8 +1,8 @@
-import { reset, seed } from 'drizzle-seed';
-import { db, sql } from './connection';
-import { schema } from './schema';
+import { reset, seed } from 'drizzle-seed'
+import { db, sql } from './connection'
+import { schema } from './schema'
 
-await reset(db, schema);
+await reset(db, schema)
 
 await seed(db, schema).refine((f) => ({
   rooms: {
@@ -12,8 +12,8 @@ await seed(db, schema).refine((f) => ({
       description: f.loremIpsum(),
     },
   },
-}));
+}))
 
-await sql.end();
+await sql.end()
 
-console.info('Database seeded');
+console.info('Database seeded')
